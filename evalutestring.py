@@ -1,16 +1,18 @@
+# Prompt the user for input
+letter_range = input("Enter a range of letters: ")
 
-# Given a string indicating a range of letters, return a string which includes all the letters in that range, including the last letter.
-# Note that if the range is given in capital letters, return the string in capitals also!
+# Separate the input string into start and end
+start = letter_range[0]
+end = letter_range[2]
 
-# Examples
-# "a-z" ➞ "abcdefghijklmnopqrstuvwxyz"
-# "h-o" ➞ "hijklmno"
-# "Q-Z" ➞ "QRSTUVWXYZ"
-# "J-J" ➞ "J"
-# Notes a hyphen will separate the two letters in the string.
+# Initialize an empty string to store the result
+result = ""
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+# Repeat over the ASCII values from start to end
+for i in range(ord(start), ord(end) + 1):
+# Convert each ASCII value back to a character and add it to the result
+    result += chr(i)
 
-user_range = input("Enter a range of letters (e.g., a-z): ")
+# Print the result
+print(result)
 
-print(result_string)
