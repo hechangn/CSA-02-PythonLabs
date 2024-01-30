@@ -1,18 +1,13 @@
-# Prompt the user for input
-letter_range = input("Enter a range of letters: ")
-
-# Separate the input string into start and end
-start = letter_range[0]
-end = letter_range[2]
-
-# Initialize an empty string to store the result
-result = ""
-
-# Repeat over the ASCII values from start to end
-for i in range(ord(start), ord(end) + 1):
-# Convert each ASCII value back to a character and add it to the result
-    result += chr(i)
-
-# Print the result
-print(result)
-
+#make a letter variable in range of alphabet
+letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#ask user to input the letters range
+range_of_letters = input("enter a range of letters (ex: a-z or a-g): \n")
+#split the letters range by hyphen "-"
+split = range_of_letters.split("-")
+#make the variable name start and end by their position in range_of_letters
+start = letters.index(split[0])
+end = letters.index(split[1])
+#use [] to make the range of letters by the user's order
+result_letters_range = letters[start:end + 1]
+#print the result
+result_display = print(result_letters_range)
