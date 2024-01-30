@@ -18,7 +18,7 @@
 #make a letter variable in range of alphabet
 alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 #ask user to input the letters range
-user_range = input("enter a range of letters (ex: a-z or a-g): \n")
+user_range = input("enter a range of letters (e.g., a-z): \n")
 #split the letters range by hyphen "-"
 split = user_range.split("-")
 #make the variable name start and end by their position in range_of_letters
